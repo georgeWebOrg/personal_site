@@ -1,0 +1,121 @@
+h1, h2 {
+    font-weight: 300;
+    font-family: 'Releway', sans-serif;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+*{
+    box-sizing: border-box;
+}
+  
+header{
+    font-size: 2em;
+    position: fixed;
+    box-shadow: 0 2px 4px -2px black;
+    left: 0;
+    right: 0;
+    padding: .5em 1em; 
+}
+
+.links a.active{
+    border-bottom: 1px solid black;
+}
+
+footer .media-link{
+    height: 32px;
+}
+
+/* fix social network photos and sizes */
+footer{
+    box-sizing: border-box;
+    position: fixed;
+    height: 64px;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px -2px black;
+}
+
+/* separate Social Network Logos from each other */
+footer a{
+    margin-right: 64px;
+    text-decoration: none;
+}
+
+header::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.name{
+    float:left;
+}
+/* option bar is aligned */
+.pages{
+    float: left;
+}
+
+/* option bar design */
+.pages a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: .25em;
+}
+
+.pages a:first-of-type {
+    margin-left: 0;
+}
+
+.pages a.active {
+    border-bottom: 1px solid black;
+}
+
+
+.wel{
+    margin-left: 3%;
+    margin-top: 5%;
+    display: inline-block;
+    width: 60%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+
+
+.wel2 {
+    display: inline-block;
+   /* width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(242, 231, 231);
+    border: 2px solid black;
+    margin-left: 3%; */
+}
+
+
+.wel3{
+        width: 30%;
+        height: 300px;
+        border-radius: 20px;
+        background-color: rgb(242, 231, 231);
+        border: 2px solid black;
+        margin-left: 3%;
+}
+
+main{
+    min-height: 100vh;
+    padding: 64px 24px 96px;
+    box-shadow: 0 0 12px -2px black;
+    font-family: 'Open Sans', sans-serif;
+}
