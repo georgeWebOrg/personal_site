@@ -40,12 +40,10 @@ h2{
     background-color: rgb(242, 231, 231);
     border: 2px solid black;
     margin-left: 3%;
+    justify-content: center;
 }
 
 .wel3{
-    align-items: center;
-    margin-right: 15%;
-    margin-left: 15%;
     border-radius: 20px;
 }
 
@@ -96,6 +94,7 @@ footer a{
     border-bottom: 1px solid black;
 }
 
+
 /* option bar design */
 .pages a{
     border: 1px solid rgb(244, 190, 237);
@@ -105,7 +104,6 @@ footer a{
     padding: .20em;
     background-color: white;
 }
-
 
 
 /* option bar is aligned */
@@ -125,3 +123,7 @@ footer a{
 .pages a.active {
     border-bottom: 1px solid black;
 }
+
+
+/* -------------------------------- A B O u T ------------------------------*/
+
