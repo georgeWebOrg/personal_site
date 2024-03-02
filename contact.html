@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Contact Information </title>
 </head>
 <body>
+    <header>
+        <nav class="pages">
+            <a class='active' href='/'> Home </a>
+            <a href='/about.html'> About </a>
+            <a href="/portfolio.html"> Projects </a>
+        </nav>
+
+    </header>
     <p> Contact Infortmation </p>
-    <h1> Tel: 888 456 4567</h1>
-    <h1> E-mail: mmm.gmail.com </h1>
+    <h4> Our Tel: 888 456 4567</h4>
+    <h4> Our E-mail: mmm.gmail.com </h4>
+    <form id="tell"> 
+        <label for="TelNum"> Phone number </label>
+        <input type="text" required name="telNum" placeholder="Enter Your Phone number">
+        <label for="mail"> Enter Your E-Mail </label>
+        <input type="text" required name="mail" placeholder="Enter Your E-mail ">
 
-    <label for="messageForm"> Cotact Us:</label>
-<br>
 
-<textarea id="messageForm" name="messageForm" rows="4" cols="50">
-Enter text here...
-</textarea>
+        <label for="messageForm"> Contact us Directyl :</label>
+        <br>
+        
+        <textarea id="messageForm" required name="messageForm" rows="4" cols="50"> 
+        Enter text here...
+        </textarea>
+        
+        <input autofocus id="submit" type="submit" value="Submit">
+    </form>
+ 
 
-<input type="submit" value="Submit">
-    
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#tell').onsubmit = function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            alert('Submitted successfully');
+        };
+    });
+</script>
+
 </body>
 </html>
